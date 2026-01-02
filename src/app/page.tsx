@@ -26,6 +26,8 @@ import RevealAnimation from "@/components/ui/reveal-animation";
 import { ResumeCard } from "@/components/resume-card";
 import { HackathonCard } from "@/components/hackethoncard";
 
+import GithubContribution from "@/components/github-contribution";
+
 const BLUR_FADE_DELAY = 0.5;
 
 export default function Page() {
@@ -43,7 +45,7 @@ export default function Page() {
                   yOffset={8}
                   text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
                 />
-                
+
               </div>
               <TypingEffect
                 className="max-w-[600px] md:text-xl dark:text-green-500 text-green-700 [text-shadow:0_0_10px_rgba(0,255,0,0.5)] font-mono"
@@ -54,7 +56,7 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={"/profile.jpg"} />
+                <AvatarImage alt={DATA.name} src={"/prof.jpeg"} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -100,69 +102,26 @@ export default function Page() {
           </div>
         </BlurFade>
       </section>
-<section id="skills">
-      <div className="flex min-h-0 flex-col gap-y-3 hover:cursor-pointer">
-        <BlurFade delay={BLUR_FADE_DELAY * 2}>
-          <h2 className="text-xl font-bold">Tech Stack</h2>
-        </BlurFade>
-        <div className="flex flex-wrap gap-2">
-          {DATA.skills.map((skill, id) => (
-            <RevealAnimation
-              key={id}
-              className="bg-white px-2  text-green-800 text-sm transition-all duration-300 ease-in-out hover:bg-green-800 hover:text-white hover:scale-110 rounded-md font-medium"
-              delay={BLUR_FADE_DELAY * 3 + id * 0.05}
-            >
-              {skill}
-            </RevealAnimation>
-          ))}
-        </div>
-      </div>
-    </section>   
-     
-      
-    <section id="projects">
-      <div className="space-y-12 w-full py-12">
-        <BlurFade delay={BLUR_FADE_DELAY * 5}>
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <div className="inline-block text-green-800 bg-gray-100 dark:bg-white text-background px-3 py-1 text-sm transition-transform duration-300 hover:scale-105">
-                My Projects
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl hover:text-green-600 transition-colors duration-300">
-                Check out my latest work
-              </h2>
-              <p className="text-green-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed hover:text-green-600 transition-colors duration-300">
-                I&apos;ve worked on a variety of projects, from simple
-                websites to complex web applications. Here are a few of my
-                favorites.
-              </p>
-            </div>
+      <section id="skills">
+        <div className="flex min-h-0 flex-col gap-y-3 hover:cursor-pointer">
+          <BlurFade delay={BLUR_FADE_DELAY * 2}>
+            <h2 className="text-xl font-bold">Tech Stack</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-2">
+            {DATA.skills.map((skill, id) => (
+              <RevealAnimation
+                key={id}
+                className="bg-white px-2  text-green-800 text-sm transition-all duration-300 ease-in-out hover:bg-green-800 hover:text-white hover:scale-110 rounded-md font-medium"
+                delay={BLUR_FADE_DELAY * 3 + id * 0.05}
+              >
+                {skill}
+              </RevealAnimation>
+            ))}
           </div>
-        </BlurFade>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-          {DATA.projects.map((project, id) => (
-             project && ( <BlurFade
-              key={project.title}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <div className="transition-transform duration-300 hover:scale-[1.02]">
-                <ProjectCard
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  links={project.links}
-                />
-              </div>
-            </BlurFade>
-             )
-          ))}
         </div>
-      </div>
-    </section>
-     <section id="work">
+      </section>
+
+      <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3 bg-transparent">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
@@ -178,16 +137,74 @@ export default function Page() {
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
-               
+
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
-               
+
               />
             </BlurFade>
           ))}
         </div>
       </section>
-   <section id="hackathons">
+      <section id="proof-of-work">
+        <BlurFade delay={BLUR_FADE_DELAY * 7}>
+          <GithubContribution />
+        </BlurFade>
+      </section>
+      <section id="projects">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block text-green-800 bg-gray-100 dark:bg-white text-background px-3 py-1 text-sm transition-transform duration-300 hover:scale-105">
+                  My Projects
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl hover:text-green-600 transition-colors duration-300">
+                  Check out my latest work
+                </h2>
+                <p className="text-green-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed hover:text-green-600 transition-colors duration-300">
+                  I&apos;ve worked on a variety of projects, from simple
+                  websites to complex web applications. Here are a few of my
+                  favorites.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            {DATA.projects.slice(0, 4).map((project, id) => (
+              project && (<BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+              >
+                <div className="transition-transform duration-300 hover:scale-[1.02]">
+                  <ProjectCard
+                    href={project.href}
+                    key={project.title}
+                    title={project.title}
+                    description={project.description}
+                    dates={project.dates}
+                    tags={project.technologies}
+                    links={project.links}
+                    image={project.image}
+                  />
+                </div>
+              </BlurFade>
+              )
+            ))}
+          </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <div className="flex justify-center mt-10">
+              <Link href="/projects">
+                <Button variant="outline" className="px-8 bg-green-700 text-white hover:bg-green-600 border-none">
+                  View More
+                </Button>
+              </Link>
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
+      <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -198,7 +215,7 @@ export default function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   I like building things
                 </h2>
-              
+
               </div>
             </div>
           </BlurFade>
@@ -214,7 +231,7 @@ export default function Page() {
                     description={project.description}
                     location={project.location}
                     dates={project.dates}
-                
+
                   />
                 </BlurFade>
               ))}
@@ -248,6 +265,6 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-    </main>
+    </main >
   );
 }

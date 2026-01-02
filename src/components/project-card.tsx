@@ -43,7 +43,7 @@ export function ProjectCard({
   return (
     <Card
       className={
-        "flex flex-col overflow-hidden border-2 rounded-lg hover:shadow-lg transition-all duration-300 ease-out h-full  hover:border-green-600  bg-transparent  group hover:cursor-pointer  "
+        "flex flex-col overflow-hidden border rounded-lg hover:shadow-lg transition-all duration-300 ease-out h-full bg-transparent group hover:cursor-pointer"
       }
     >
       <Link
@@ -66,7 +66,7 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top group-hover:scale-105 transition-transform duration-300" // Added hover effect
+            className="h-48 w-full overflow-hidden object-cover object-top group-hover:scale-105 transition-transform duration-300" // Added hover effect
           />
         )}
       </Link>

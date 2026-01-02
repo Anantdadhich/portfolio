@@ -2,48 +2,48 @@ import { Icons } from "@/components/icons";
 import { HomeIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Anant Dadhich - Developer",
+  name: "Anant Dadhich",
   initials: "AD",
-  url:"https://anant",
-  location: "Bhilwara, India",
-  locationLink: "https://maps.app.goo.gl/F5zdd1RkXEdX5uUY8",
+  url: "https://anantdadhich.vercel.app/",
+  location: "Jaipur, India",
+  locationLink: "https://maps.app.goo.gl/qZCRZcNTVgXpEVFJA",
   description:
     "Hi, I am a Full Stack & Blockchain Developer.Currently building stuff where you just trust the code on solana .I am always eager to learn new things and open to freelance gigs. Feel free to contact me! ↓ ",
   summary:
     "I am  developer i love to code and whenever gets bored i turns into music currently focus on blockchain technologies .",
   skills: [
- "JavaScript",
-"TypeScript",
-"Rust",
-"Next JS",
-"React JS",
-"Node JS",
-"Express JS",
-"Hono JS",
-"Recoil",
-"Mongo DB",
-"PostgresSQL",
-"Prisma ORM",
-"Docker",
-"Git/GitHub",
-"Vite",
-"CloudFlare",
-"Turborepoes",
-"Redis",
-"Pub Sub",
-"WebSockets",
-"WebRTC",
-"GRPC",
-"OpenAPI",
-"SolanaWeb3.js",
-"Anchor Solana",
-"Testing",
-"HTML",
-"CSS",
-"Tailwind CSS",
-"Material UI",
-"Shadcn UI",
-"GSAP"
+    "JavaScript",
+    "TypeScript",
+    "Rust",
+    "Next JS",
+    "React JS",
+    "Node JS",
+    "Express JS",
+    "Hono JS",
+    "Recoil",
+    "Mongo DB",
+    "PostgresSQL",
+    "Prisma ORM",
+    "Docker",
+    "Git/GitHub",
+    "Vite",
+    "CloudFlare",
+    "Turborepoes",
+    "Redis",
+    "Pub Sub",
+    "WebSockets",
+    "WebRTC",
+    "GRPC",
+    "OpenAPI",
+    "SolanaWeb3.js",
+    "Anchor Solana",
+    "Testing",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "Material UI",
+    "Shadcn UI",
+    "GSAP"
   ],
   navbar: [{ href: "/#", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -67,7 +67,7 @@ export const DATA = {
         icon: Icons.x,
         navbar: true,
       },
-  
+
       Email: {
         name: "Send Email",
         url: "mailto:anantdadhich66@gmail.com",
@@ -76,7 +76,7 @@ export const DATA = {
       },
     },
   }
- ,
+  ,
 
 
   projects: [
@@ -111,9 +111,37 @@ export const DATA = {
           href: "https://github.com/Anantdadhich/Coursu.ai",
           icon: <Icons.github className="size-3" />,
         },
-      ]
+      ],
+      image: "/coursu.png",
     },
-     {
+    {
+      title: "NeuralTrader",
+      href: "https://neuraltrader.vercel.app/",
+      dates: "June 2025",
+      active: true,
+      description:
+        "An AI simulation platform on Solana where AI agents with different personalities trade a token in a simulated Solana environment. ",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Solana Agent Kit",
+        "LangChain",
+        "Ollama",
+        "ASI",
+        "SolanaWeb3.js",
+        "Anchor",
+
+      ],
+      links: [
+        {
+          type: "Live URL",
+          href: "https://codemuse-delta.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/neural.png",
+    },
+    {
       title: "Devfinder",
 
       dates: "May 2024",
@@ -129,46 +157,53 @@ export const DATA = {
         "Stream.io",
         "Shadcn UI",
         "Next-Auth",
-      
+
       ],
       links: [
         {
           type: "Live URL",
           href: "https://devfinder-coral.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },{
+        }, {
           type: "Codebase",
           href: "https://github.com/Anantdadhich/Bugfinder-paircode",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image:"/nvidia.png,"
+
+      image: "/devfinder.png",
     },
+
     {
-      title: "BrainyChain.ai",
-      dates: "Nov 2024",
+      title: "Devtalk",
+      href: "https://plinkoo-azure.vercel.app/",
+      dates: "Sept 2024",
       active: true,
       description:
-        "It is an AI-powered Telegram bot designed to guide you in creating a Solana wallet, generating tokens, and minting NFTs ",
+        "It is platform where developers connect with random dev just like omegle and share thier thoughts and ideas",
       technologies: [
-        "Telegraf",
-        "Express.js",
+        "React.js",
         "Typescript",
-        "Pinata IPFS",
-        "Prisma",
-        "SolanaWeb3.js",
-        "Metaplex",
-         "GeminiAPI"
-      
+        "WebRTC",
+        "Express.js",
+        "TailwindCSS",
+        "WebSockets",
+        "Aceternity UI",
+
       ],
       links: [
-       
+        {
+          type: "Live URL",
+          href: "https://devtalk-iota.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
         {
           type: "Codebase",
-          href: "https://github.com/Anantdadhich/Brainychain",
+          href: "https://github.com/Anantdadhich/devtalk",
           icon: <Icons.github className="size-3" />,
         },
-      ]
+      ],
+      image: "/devtalk.png",
     },
     {
       title: "Checkers",
@@ -197,7 +232,35 @@ export const DATA = {
           href: "https://github.com/Anantdadhich/checkers",
           icon: <Icons.github className="size-3" />,
         },
-      ]
+      ],
+      image: "",
+    },
+    {
+      title: "BrainyChain.ai",
+      dates: "Nov 2024",
+      active: true,
+      description:
+        "It is an AI-powered Telegram bot designed to guide you in creating a Solana wallet, generating tokens, and minting NFTs ",
+      technologies: [
+        "Telegraf",
+        "Express.js",
+        "Typescript",
+        "Pinata IPFS",
+        "Prisma",
+        "SolanaWeb3.js",
+        "Metaplex",
+        "GeminiAPI"
+
+      ],
+      links: [
+
+        {
+          type: "Codebase",
+          href: "https://github.com/Anantdadhich/Brainychain",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
     },
     {
       title: "Codemuse",
@@ -208,8 +271,8 @@ export const DATA = {
         "It is AI-powered code inspiration engine where you get personalized project ideas based on your GitHub activity and tech preferences  ",
       technologies: [
         "tRPC",
-         "Typescript",
-     "Nextjs",
+        "Typescript",
+        "Nextjs",
         "GeminiAPI"
       ],
       links: [
@@ -218,7 +281,8 @@ export const DATA = {
           href: "https://codemuse-delta.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         }
-      ]
+      ],
+      image: "",
     },
     {
       title: "Fruity Slice",
@@ -246,9 +310,10 @@ export const DATA = {
           href: "https://github.com/Anantdadhich/fruityslice",
           icon: <Icons.github className="size-3" />,
         },
-      ]
+      ],
+      image: "",
     },
-     , {
+    {
       title: "FluidNFT",
       href: "https://web-tube-delta.vercel.app/",
       dates: "July 2024",
@@ -257,11 +322,11 @@ export const DATA = {
         "FluidNFT is a Solana-based platform that lets you instantly swap your SOL NFTs for any token with ease and speed.",
       technologies: [
         "Next.js",
-         "Typescript",
-     "TailwindCSS",
-         "Shadcn UI",
-         "SolanaWeb3.js",
-         "Metaplex",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI",
+        "SolanaWeb3.js",
+        "Metaplex",
       ],
       links: [
         {
@@ -274,9 +339,10 @@ export const DATA = {
           href: "https://github.com/Anantdadhich/fluidnft",
           icon: <Icons.github className="size-3" />,
         },
-      ]
+      ],
+      image: "",
     }
-,
+    ,
     {
       title: "Discode",
       href: "https://discode-xi.vercel.app/",
@@ -305,38 +371,10 @@ export const DATA = {
           href: "https://github.com/Anantdadhich/discode",
           icon: <Icons.github className="size-3" />,
         },
-      ]
-    },
-    {
-      title: "Devtalk",
-      href: "https://plinkoo-azure.vercel.app/",
-      dates: "Sept 2024",
-      active: true,
-      description:
-        "It is platform where developers connect with random dev just like omegle and share thier thoughts and ideas",
-      technologies: [
-        "React.js",
-        "Typescript",
-        "WebRTC",
-         "Express.js",
-        "TailwindCSS",
-        "WebSockets",
-        "Aceternity UI",
-        
       ],
-      links: [
-        {
-          type: "Live URL",
-          href: "https://devtalk-iota.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Codebase",
-          href: "https://github.com/Anantdadhich/devtalk",
-          icon: <Icons.github className="size-3" />,
-        },
-      ]
+      image: "",
     },
+
     {
       title: "Snapgram",
       href: "https://social-media-app-blue-one.vercel.app",
@@ -350,9 +388,9 @@ export const DATA = {
         "Appwrite",
         "React Query",
         "TailwindCSS",
-        
+
         "Shadcn UI",
-        
+
       ],
       links: [
         {
@@ -365,9 +403,10 @@ export const DATA = {
           href: "https://github.com/Anantdadhich/snapgram",
           icon: <Icons.github className="size-3" />,
         },
-      ]
+      ],
+      image: "",
     },
-     
+
     {
       title: "Plinkoo",
       href: "https://plinkoo-azure.vercel.app/",
@@ -379,11 +418,11 @@ export const DATA = {
         "React.js",
         "Typescript",
         "Canvas",
-            "Express.js",
+        "Express.js",
         "TailwindCSS",
-        
+
         "Aceternity UI",
-        
+
       ],
       links: [
         {
@@ -396,7 +435,8 @@ export const DATA = {
           href: "https://github.com/Anantdadhich/plinkoo",
           icon: <Icons.github className="size-3" />,
         },
-      ]
+      ],
+      image: "",
     },
     {
       title: "Technoverse",
@@ -410,8 +450,8 @@ export const DATA = {
         "CSS",
         "Javascript",
         "GSAP",
-      
-        
+
+
       ],
       links: [
         {
@@ -425,44 +465,80 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
+      image: "",
     }
   ]
-   ,work:[ {
-      company: "Ready Bytes",
+  , work: [{
+    company: "Ready Bytes",
 
-      badges: [],
-      location: "Bhilwara",
-      title: "Full Stack Development internship",
-      logoUrl: "/ready-bytes-logo.png",
-      start: "July 2024",
-      end: "Aug 2024",
-     
-    },], hackathons: [
+    badges: [],
+    location: "Bhilwara",
+    title: "Full Stack Dev",
+    logoUrl: "/ready-bytes-logo.png",
+    start: "July 2024",
+    end: "Aug 2024",
+
+  },
+  {
+    company: "Comacks",
+    badges: [],
+    location: "Remote",
+    title: "Fullstack AI Developer",
+    logoUrl: "/comlogo.jpg",
+    start: "Sept 2025",
+    end: "Nov 2025",
+    description: "Built fullstack application for clients with AI automation, RAG bots and all.",
+  },
+  {
+    company: "Solana Turbin3",
+    badges: [],
+    location: "Remote",
+    title: "Grad Builder Cohort 3",
+    logoUrl: "/tur.ico",
+    start: "Aug 2025",
+    end: "Sept 2025",
+    description: "Graduated Builder Cohort 3.",
+  },
+  ], hackathons: [
     {
       title: "Google Gen AI",
       dates: "September 20th - October 2th, 2024",
       location: "Virtual, Devfolio",
       description:
         "Built an AI-driven course creation platform during a hackathon using Next.js, Gemini API, and YouTube API to generate structured courses with video summaries and quizzes",
-      
-      
-    },  {
+
+
+    }, {
       title: "HackIndia",
       dates: "October 3rd -  4th, 2024",
       location: "PIET,Jaipur",
       description:
         "Took part in a hackathon where I built an NFT music marketplace using Solidity — allowing artists to mint, list, and trade their music as NFTs.",
-      
-      
-    },{
+
+
+    }, {
       title: "100xDevs Solana Hackathon",
       dates: "May 2025",
       location: "Virtual, Superteam",
       description:
         "Won a $100 bounty and ranked among the top 40 projects in a hackathon held by 100xdevs SuperteamIn.",
+    },
+    {
+      title: "ETHGlobal New Delhi",
+      dates: "September 26th - 28th, 2025",
+      location: "New Delhi",
+      description:
+        "Participated in the ETHGlobal New Delhi hackathon and built a project using zk-proofs",
+    },
+    {
+      title: "Solana Cypherpunk Hackathon",
+      dates: "October 2025",
+      location: "Virtual",
+      description:
+        "Participated in the Solana Cypherpunk Hackathon and built a NeuralTrader AI simulation platform on Solana.",
     }
-    
-    
+
+
   ]
-    
+
 };
