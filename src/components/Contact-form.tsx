@@ -57,9 +57,9 @@ export default function ContactForm() {
     }
   };
   return (
-    <form className="space-y-6 mt-5 " onSubmit={handleSubmit}>
+    <form className="space-y-6 mt-6 max-w-xl mx-auto p-6 border border-green-500/10 dark:border-green-500/20 bg-white/5 dark:bg-[#000500]/45 backdrop-blur-md rounded-lg shadow-xl" onSubmit={handleSubmit}>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <div className="space-y-1.5 ">
+        <div className="space-y-1.5 relative group">
           <Input
             id="name"
             type="text"
@@ -67,47 +67,50 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="Full Name"
             required={true}
-            className="focus:border-green-600 dark:bg-[#001100] bg-transparent rounded-none focus-visible:ring-0  "
+            className="h-11 px-4 border border-green-900/30 dark:border-green-500/20 bg-green-950/5 dark:bg-[#000b00]/60 text-foreground rounded-none transition-all duration-300 placeholder:text-green-800/40 dark:placeholder:text-green-500/35 font-mono text-sm focus:border-green-500 focus:shadow-[0_0_12px_rgba(34,197,94,0.3)] focus-visible:ring-0 focus-visible:outline-none"
             value={form.name}
           />
+          <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-focus-within:w-full" />
         </div>
-        <div className="space-y-1.5">
+        <div className="space-y-1.5 relative group">
           <Input
             id="email"
             type="email"
             name="email"
             onChange={handleChange}
-            placeholder="Email"
+            placeholder="Email Address"
             required={true}
-            className="focus:border-green-600 dark:bg-[#001100] bg-transparent  rounded-none focus-visible:ring-0"
+            className="h-11 px-4 border border-green-900/30 dark:border-green-500/20 bg-green-950/5 dark:bg-[#000b00]/60 text-foreground rounded-none transition-all duration-300 placeholder:text-green-800/40 dark:placeholder:text-green-500/35 font-mono text-sm focus:border-green-500 focus:shadow-[0_0_12px_rgba(34,197,94,0.3)] focus-visible:ring-0 focus-visible:outline-none"
             value={form.email}
           />
+          <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-focus-within:w-full" />
         </div>
       </div>
-      <div className="space-y-1.5">
+      <div className="space-y-1.5 relative group">
         <Textarea
           id="message"
           name="msg"
           rows={5}
-          placeholder="Your message"
+          placeholder="Type your message here..."
           onChange={handleChange}
           required={true}
-          className="focus:border-green-600 dark:bg-[#001100] bg-transparent  rounded-none focus-visible:ring-0 resize-none"
+          className="p-4 border border-green-900/30 dark:border-green-500/20 bg-green-950/5 dark:bg-[#000b00]/60 text-foreground rounded-none transition-all duration-300 placeholder:text-green-800/40 dark:placeholder:text-green-500/35 font-mono text-sm focus:border-green-500 focus:shadow-[0_0_12px_rgba(34,197,94,0.3)] focus-visible:ring-0 focus-visible:outline-none resize-none"
           value={form.msg}
         />
+        <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-focus-within:w-full" />
       </div>
       <Button
         type="submit"
         disabled={loading}
-        className="w-full flex justify-center items-center gap-1 transition rounded-none "
+        className="w-full h-11 flex justify-center items-center gap-2 font-mono text-sm uppercase tracking-wider rounded-none bg-green-700 hover:bg-green-600 dark:bg-green-900 dark:hover:bg-green-800 text-white border border-green-500/30 hover:border-green-500/50 shadow-[0_0_10px_rgba(34,197,94,0.15)] dark:shadow-[0_0_10px_rgba(34,197,94,0.3)] hover:shadow-[0_0_20px_rgba(34,197,94,0.5)] transition-all duration-300 group"
       >
         {loading ? (
           <>
-            Sending <LoaderCircle className="animate-spin" size={14} />
+            Sending message <LoaderCircle className="animate-spin" size={16} />
           </>
         ) : (
           <>
-            Send Message <SendHorizontal size={14} />
+            Send message <SendHorizontal className="group-hover:translate-x-1 transition-transform" size={16} />
           </>
         )}
       </Button>

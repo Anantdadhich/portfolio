@@ -22,10 +22,27 @@ const MatrixRain: React.FC<MatrixRainProps> = ({
     canvas.height = window.innerHeight;
 
     const fontSize = 14;
-    const columns = Math.floor(canvas.width / fontSize);
+    let columns = Math.floor(canvas.width / fontSize);
     const characters =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()_+{}[]|;:,.<>?";
-    const drops = new Array(columns).fill(0);
+    let drops = new Array(columns).fill(0);
+
+    const handleResize = () => {
+      if (!canvas) return;
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      const newColumns = Math.floor(canvas.width / fontSize);
+      if (newColumns !== columns) {
+        columns = newColumns;
+        const newDrops = new Array(columns).fill(0);
+        for (let i = 0; i < Math.min(drops.length, newDrops.length); i++) {
+          newDrops[i] = drops[i];
+        }
+        drops = newDrops;
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
 
     function draw() {
       if (!ctx || !canvas) return;
@@ -59,7 +76,10 @@ const MatrixRain: React.FC<MatrixRainProps> = ({
 
     const intervalId = setInterval(draw, speed);
 
-    return () => clearInterval(intervalId);
+    return () => {
+      clearInterval(intervalId);
+      window.removeEventListener("resize", handleResize);
+    };
   }, [intensity, speed]);
 
   return <canvas ref={canvasRef} className="fixed inset-0 z-[-1] opacity-25" />;

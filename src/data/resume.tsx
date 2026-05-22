@@ -82,6 +82,7 @@ export const DATA = {
   projects: [
     {
       title: "Coursu.ai",
+       href: "https://coursu-ai.vercel.app/",
       dates: "July 2024 - Aug 2024",
       active: true,
       description:
@@ -116,8 +117,8 @@ export const DATA = {
     },
     {
       title: "NeuralTrader",
-      href: "https://neuraltrader.vercel.app/",
-      dates: "June 2025",
+      href: "/",
+      dates: "Present",
       active: true,
       description:
         "An AI simulation platform on Solana where AI agents with different personalities trade a token in a simulated Solana environment. ",
@@ -135,7 +136,7 @@ export const DATA = {
       links: [
         {
           type: "Live URL",
-          href: "https://codemuse-delta.vercel.app/",
+          href: "/",
           icon: <Icons.globe className="size-3" />,
         }
       ],
@@ -143,7 +144,7 @@ export const DATA = {
     },
     {
       title: "Devfinder",
-
+      href: "https://devfinder-coral.vercel.app/",
       dates: "May 2024",
       active: true,
       description:
@@ -176,8 +177,8 @@ export const DATA = {
 
     {
       title: "Devtalk",
-      href: "https://plinkoo-azure.vercel.app/",
-      dates: "Sept 2024",
+      href: "https://devtalk-iota.vercel.app/",
+      dates: "July 2025",
       active: true,
       description:
         "It is platform where developers connect with random dev just like omegle and share thier thoughts and ideas",
@@ -522,6 +523,7 @@ export const DATA = {
       location: "Virtual, Superteam",
       description:
         "Won a $100 bounty and ranked among the top 40 projects in a hackathon held by 100xdevs SuperteamIn.",
+      win: "Won $100",
     },
     {
       title: "ETHGlobal New Delhi",
@@ -535,7 +537,8 @@ export const DATA = {
       dates: "October 2025",
       location: "Virtual",
       description:
-        "Participated in the Solana Cypherpunk Hackathon and built a NeuralTrader AI simulation platform on Solana.",
+        "Participated in the Solana Cypherpunk Hackathon, won a $350 prize, and built a NeuralTrader AI simulation platform on Solana.",
+      win: "Won $350",
     }
 
 

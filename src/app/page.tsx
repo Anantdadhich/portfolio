@@ -209,8 +209,13 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-white text-background px-3 py-1 text-sm text-green-800">
-                  Hackathons
+                <div className="flex gap-2 justify-center items-center">
+                  <div className="inline-block rounded-lg bg-white text-background px-3 py-1 text-sm text-green-800 font-semibold">
+                    Hackathons
+                  </div>
+                  <div className="inline-block rounded-lg bg-green-700 text-white px-3 py-1 text-sm font-semibold animate-pulse">
+                    🏆 2x Hack Winner
+                  </div>
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   I like building things
@@ -231,7 +236,7 @@ export default function Page() {
                     description={project.description}
                     location={project.location}
                     dates={project.dates}
-
+                    win={project.win}
                   />
                 </BlurFade>
               ))}
