@@ -82,7 +82,7 @@ export const DATA = {
   projects: [
     {
       title: "Coursu.ai",
-       href: "https://coursu-ai.vercel.app/",
+      href: "https://coursu-ai.vercel.app/",
       dates: "July 2024 - Aug 2024",
       active: true,
       description:
@@ -205,6 +205,90 @@ export const DATA = {
         },
       ],
       image: "/devtalk.png",
+    }, {
+      title: "FlowFi",
+      href: "https://flowfi-payment.vercel.app/",
+      dates: "2026",
+      active: true,
+      description:
+        "FlowFi is a stablecoin-powered payment infrastructure platform built on Solana that helps freelancers and small businesses access their earnings immediately instead of waiting through traditional invoice cycles.",
+      technologies: [
+        "Solana",
+        "Rust",
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "SolanaWeb3.js",
+        "Anchor"
+      ],
+      links: [
+        {
+          type: "Live URL",
+          href: "https://flowfi-payment.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Codebase",
+          href: "https://github.com/Anantdadhich/Flowfi",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+    },
+    {
+      title: "Solctl",
+      href: "https://crates.io/crates/solctl-cli",
+      dates: "2026",
+      active: true,
+      description:
+        "A CLI wrapper for the Solana CLI, so you don't have to memorize or hand-type commands.",
+      technologies: [
+        "Rust",
+        "Solana CLI",
+        "CLI",
+        "Crates.io"
+      ],
+      links: [
+        {
+          type: "Live URL",
+          href: "https://crates.io/crates/solctl-cli",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Codebase",
+          href: "https://github.com/Anantdadhich/Solctl",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+    },
+    {
+      title: "Veilbid",
+      href: "https://veilbid-liquidator.vercel.app/",
+      dates: "2026",
+      active: true,
+      description:
+        "Private Auctions for Solana Liquidation Opportunities.",
+      technologies: [
+        "Solana",
+        "Next.js",
+        "TypeScript",
+        "Anchor Solana",
+        "TailwindCSS"
+      ],
+      links: [
+        {
+          type: "Live URL",
+          href: "https://veilbid-liquidator.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Codebase",
+          href: "https://github.com/Anantdadhich/Veilbid",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
     },
     {
       title: "Checkers",
@@ -499,6 +583,26 @@ export const DATA = {
     start: "Aug 2025",
     end: "Sept 2025",
     description: "Graduated Builder Cohort 3.",
+  },
+  {
+    company: "Quorum",
+    badges: [],
+    location: "Remote",
+    title: "Founder",
+    logoUrl: "/quor.png",
+    start: "June 2026",
+    end: "Present",
+    description: "Building routing intelligence on Solana.",
+  },
+  {
+    company: "Superteam India",
+    badges: ["Grant Recipient"],
+    location: "Remote",
+    title: "Member",
+    logoUrl: "/superin.jpeg",
+    start: "July 2026",
+    end: "Present",
+    description: "Superteam India Member & Grant Recipient — won a Solana foundation india grant.",
   },
   ], hackathons: [
     {
