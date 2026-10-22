@@ -81,6 +81,59 @@ export const DATA = {
 
   projects: [
     {
+      title: "Quorum",
+      href: "https://www.quorumlabs.xyz/",
+      dates: "June 2026 - Present",
+      active: true,
+      description:
+        "The routing intelligence layer for Solana , because every transaction deserves to know where it is going before it gets there.",
+      technologies: [
+        "Rust",
+        "TypeScript",
+        "Solana",
+        "QUIC",
+        "Solana TPU",
+        "PostgreSQL",
+        "Oracle Cloud",
+        "Next.js",
+      ],
+      links: [
+        {
+          type: "Live URL",
+          href: "https://www.quorumlabs.xyz/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/quorum.png",
+    },
+    {
+      title: "NeuralTrader",
+      href: "/",
+      dates: "Present",
+      active: true,
+      description:
+        "An AI simulation platform on Solana where AI agents with different personalities trade a token in a simulated Solana environment. ",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Solana Agent Kit",
+        "LangChain",
+        "Ollama",
+        "ASI",
+        "SolanaWeb3.js",
+        "Anchor",
+
+      ],
+      links: [
+        {
+          type: "Live URL",
+          href: "/",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/neural.png",
+    },
+    {
       title: "Coursu.ai",
       href: "https://coursu-ai.vercel.app/",
       dates: "July 2024 - Aug 2024",
@@ -114,33 +167,6 @@ export const DATA = {
         },
       ],
       image: "/coursu.png",
-    },
-    {
-      title: "NeuralTrader",
-      href: "/",
-      dates: "Present",
-      active: true,
-      description:
-        "An AI simulation platform on Solana where AI agents with different personalities trade a token in a simulated Solana environment. ",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Solana Agent Kit",
-        "LangChain",
-        "Ollama",
-        "ASI",
-        "SolanaWeb3.js",
-        "Anchor",
-
-      ],
-      links: [
-        {
-          type: "Live URL",
-          href: "/",
-          icon: <Icons.globe className="size-3" />,
-        }
-      ],
-      image: "/neural.png",
     },
     {
       title: "Devfinder",
@@ -205,7 +231,8 @@ export const DATA = {
         },
       ],
       image: "/devtalk.png",
-    }, {
+    },
+    {
       title: "FlowFi",
       href: "https://flowfi-payment.vercel.app/",
       dates: "2026",
@@ -219,7 +246,7 @@ export const DATA = {
         "TypeScript",
         "TailwindCSS",
         "SolanaWeb3.js",
-        "Anchor"
+        "Anchor",
       ],
       links: [
         {
@@ -233,7 +260,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/flowfi.png",
     },
     {
       title: "Solctl",
@@ -553,57 +580,47 @@ export const DATA = {
       image: "",
     }
   ]
-  , work: [{
-    company: "Ready Bytes",
-
-    badges: [],
-    location: "Bhilwara",
-    title: "Full Stack Dev",
-    logoUrl: "/ready-bytes-logo.png",
-    start: "July 2024",
-    end: "Aug 2024",
-
-  },
-  {
-    company: "Comacks",
-    badges: [],
-    location: "Remote",
-    title: "Fullstack AI Developer",
-    logoUrl: "/comlogo.jpg",
-    start: "Sept 2025",
-    end: "Nov 2025",
-    description: "Built fullstack application for clients with AI automation, RAG bots and all.",
-  },
-  {
-    company: "Solana Turbin3",
-    badges: [],
-    location: "Remote",
-    title: "Grad Builder Cohort 3",
-    logoUrl: "/tur.ico",
-    start: "Aug 2025",
-    end: "Sept 2025",
-    description: "Graduated Builder Cohort 3.",
-  },
-  {
-    company: "Quorum",
-    badges: [],
-    location: "Remote",
-    title: "Founder",
-    logoUrl: "/quor.png",
-    start: "June 2026",
-    end: "Present",
-    description: "Building routing intelligence on Solana.",
-  },
-  {
-    company: "Superteam India",
-    badges: ["Grant Recipient"],
-    location: "Remote",
-    title: "Member",
-    logoUrl: "/superin.jpeg",
-    start: "July 2026",
-    end: "Present",
-    description: "Superteam India Member & Grant Recipient — won a Solana foundation india grant.",
-  },
+  , work: [
+    {
+      company: "Comacks",
+      badges: [],
+      location: "Remote",
+      title: "Founding Tech Lead",
+      logoUrl: "/comlogo.jpg",
+      start: "Dec 2025",
+      end: "Present",
+      description: "Lead engineering teams to deliver client projects end to end, from architecture to deployment, while building internal systems and integrating AI-powered solutions, RAG pipelines, and automation workflows.",
+    },
+    {
+      company: "Solana Turbin3",
+      badges: [],
+      location: "Remote",
+      title: "Grad Builder Cohort 3",
+      logoUrl: "/tur.ico",
+      start: "Aug 2025",
+      end: "Sept 2025",
+      description: "Graduated Builder Cohort 3.",
+    },
+    {
+      company: "Quorum",
+      badges: [],
+      location: "Remote",
+      title: "Founder",
+      logoUrl: "/quor.png",
+      start: "June 2026",
+      end: "Present",
+      description: "Building routing intelligence on Solana.",
+    },
+    {
+      company: "Superteam India",
+      badges: ["Grant Recipient"],
+      location: "Remote",
+      title: "Member",
+      logoUrl: "/superin.jpeg",
+      start: "July 2026",
+      end: "Present",
+      description: "Superteam India Member & Grant Recipient — won a Solana foundation india grant.",
+    },
   ], hackathons: [
     {
       title: "Google Gen AI",
