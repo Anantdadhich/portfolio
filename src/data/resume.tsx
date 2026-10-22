@@ -263,6 +263,28 @@ export const DATA = {
       image: "/flowfi.png",
     },
     {
+      title: "Mehfil",
+      href: "https://www.mehfilroom.online/",
+      dates: "2026",
+      active: true,
+      description:
+        "Mehfil is a late night ghazal room made for fun, scaled to over 6k users.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Live URL",
+          href: "https://www.mehfilroom.online/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+    },
+    {
       title: "Solctl",
       href: "https://crates.io/crates/solctl-cli",
       dates: "2026",
